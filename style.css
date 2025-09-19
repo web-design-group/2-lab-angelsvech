@@ -8,13 +8,15 @@ body {
     line-height: 1.6;
     background-image: linear-gradient(to bottom, #200000, #000000);
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
 }
 
 /* Стилевые правила для заголовков */
@@ -22,61 +24,50 @@ h1 {
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 h2 {
     color: #8B0000;
-    margin-bottom: 25px;
     font-size: 32px;
-    border-bottom: 3px solid #8B0000;
-    padding-bottom: 12px;
-    text-align: center;
+    padding-bottom: 8px;
+    margin: 0;
 }
 
 h3 {
     color: #FF4500;
-    margin-bottom: 15px;
     font-size: 24px;
-    border-left: 4px solid #8B0000;
-    padding-left: 15px;
+    padding-left: 0;
+    margin: 0;
 }
 
 /* Стилевые правила для текста параграфов */
 p {
-    margin-bottom: 15px;
     font-size: 16px;
     text-align: justify;
-    line-height: 1.7;
+    line-height: 1.6;
     color: #DDD;
+    margin: 0;
 }
 
 /* Контент-боксы */
 .content-box {
-    background-color: #1a0000;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #8B0000;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 /* Стили для актеров */
 .actor-card {
-    margin-bottom: 40px;
-    padding: 25px;
+    padding: 15px;
     background-color: #1a0000;
-    border-radius: 10px;
-    border-left: 5px solid #8B0000;
     overflow: hidden;
+    margin: 0;
 }
 
 .actor-card img {
-    width: 280px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
-    border: 3px solid #8B0000;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .actor-info {
@@ -88,20 +79,18 @@ p {
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin: 0 0 15px 0;
 }
 
 /* Float positioning */
 .float-left {
     float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    margin: 0 20px 15px 0;
 }
 
 .float-right {
     float: right;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin: 0 0 15px 20px;
 }
 
 .clearfix::after {
@@ -113,35 +102,28 @@ p {
 /* Стили для галереи */
 .gallery-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Изменено с center на flex-start */
     flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 25px;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .gallery-item {
-    text-align: center;
+    text-align: left; /* Изменено с center на left */
     flex: 1;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 250px;
+    max-width: 300px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
-    border: 3px solid #8B0000;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
 }
 
 .gallery-item p {
-    text-align: center;
-    margin-top: 10px;
+    text-align: left; /* Изменено с center на left */
+    margin: 8px 0 0 0;
     font-style: italic;
     color: #8B0000;
 }
@@ -149,60 +131,54 @@ p {
 /* Стили для списков */
 ul {
     list-style-position: inside;
-    margin-left: 20px;
+    margin: 0;
+    padding-left: 15px;
 }
 
 li {
-    margin-bottom: 12px;
+    margin: 0 0 8px 0;
     color: #DDD;
-    line-height: 1.6;
-    padding: 5px 0;
+    line-height: 1.5;
+    padding: 2px 0;
 }
 
 .links-list li {
-    margin-bottom: 20px;
-    padding: 10px;
+    padding: 8px;
     background-color: #1a0000;
-    border-radius: 5px;
-    border-left: 3px solid #8B0000;
+    margin: 0 0 10px 0;
 }
 
 /* Стили для ссылок */
 a {
     color: #FF4500;
     text-decoration: none;
-    transition: all 0.3s ease;
-    padding: 3px 8px;
-    border-radius: 4px;
 }
 
 a:hover {
     color: #FFFFFF;
     background-color: #8B0000;
-    text-decoration: none;
 }
 
 /* Стили для футера */
 footer {
     background-color: #000;
     color: #8B0000;
-    text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-    border-top: 3px solid #8B0000;
+    text-align: left; /* Изменено с center на left */
+    padding: 20px;
+    margin-top: 30px;
     font-size: 14px;
 }
 
 footer p {
-    text-align: center;
-    margin: 5px 0;
+    text-align: left; /* Изменено с center на left */
+    margin: 3px 0;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
     .float-left, .float-right {
         float: none;
-        margin: 0 auto 20px;
+        margin: 0 auto 15px;
         display: block;
     }
     
@@ -217,7 +193,7 @@ footer p {
     
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 }
 
@@ -227,5 +203,5 @@ footer p {
     display: inline-block;
     padding-bottom: 5px;
     border-bottom: 2px solid #8B0000;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
