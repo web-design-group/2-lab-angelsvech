@@ -82,7 +82,6 @@ p {
     margin: 0 0 15px 0;
 }
 
-/* Float positioning */
 .float-left {
     float: left;
     margin: 0 20px 15px 0;
@@ -204,4 +203,5 @@ footer p {
     border-bottom: 2px solid #8B0000;
     margin: 10px 0 0 0;
 }
+
 
